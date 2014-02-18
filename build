@@ -1,0 +1,12 @@
+#!/bin/bash
+npm install
+echo "Npm Install Done."
+
+bower install
+echo "Bower Install Done."
+
+cd test/
+bower install
+echo "test dir Bower Install Done."
+
+echo "All Done"

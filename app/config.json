@@ -1,0 +1,33 @@
+[
+    {
+        "name": "aaa.png",
+        "level": "first",
+        "width": "640",
+        "actions": [
+            {
+                "name": "返回",
+                "point": [5, 53, 137, 121],
+                "action": "bbb",
+                "animation": {
+                    "animationType": 1,
+                    "isBack": true
+                }
+            }
+        ]
+    },
+    {
+        "name": "bbb.png",
+        "width": "640",
+        "actions": [
+            {
+                "name": "具体日期",
+                "point": [0, 599, 639, 1041],
+                "action": "aaa",
+                "animation": {
+                    "animationType": 1,
+                    "isBack": false
+                }
+            }
+        ]
+    }
+]

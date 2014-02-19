@@ -31,9 +31,8 @@ config.json文件配置
             // 图片名
             "name": "aaa.png",
 
-            // 标明这是首页，必须放在第一个item
-            // 其余页面不要设置此属性
-            "level": "first",
+            // 标明这是第一个页面
+            "first": true,
 
             // 图片宽度
             "width": "640",

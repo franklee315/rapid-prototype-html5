@@ -21,14 +21,18 @@ rapid-prototype-html5
 
 ### 4,grunt的使用，请参见官方网站
 
-config.json文件配置
+使用说明
 =====
 
-### 1,示例
+### 1,如何使用
+1，将页面预览图放入 app/images/ 中
+2，编写 app/config.json 文件
+
+### 2,config.json 示例说明
 
     [
         {
-            // 图片名
+            // app/images/ 中的图片名，需带后缀
             "name": "aaa.png",
 
             // 标明这是第一个页面

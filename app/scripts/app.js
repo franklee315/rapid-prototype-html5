@@ -22,14 +22,8 @@ define([
                 $.each(data, function (infoIndex, info) {
                     var imgWidth = info["width"];
                     var imgName = info["name"];
-                    var level = info["level"];
+                    var first = info["first"];
                     var id = imgName.substring(0, imgName.length - 4);
-
-                    console.debug("imgName:" + imgName);
-                    console.debug("id:" + id);
-                    console.debug("imgWidth:" + imgWidth);
-                    console.debug("level:" + level);
-
 
                     var $imgDiv = $("<div></div>");
                     $imgDiv.attr("id", id);
@@ -42,13 +36,11 @@ define([
                     $img.attr("usemap", "#" + id + "Map");
                     $imgDiv.append($img);
 
-                    if (level) {
+                    if (first) {
                         $imgDiv.show();
 //                        $img.Jcrop();
-                        console.debug(id + "show");
                     } else {
                         $imgDiv.hide();
-                        console.debug(id + "hide");
                     }
 
                     var map = info["actions"];

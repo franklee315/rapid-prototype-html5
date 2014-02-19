@@ -1,7 +1,7 @@
 [
     {
         "name": "aaa.png",
-        "level": "first",
+        "first": true,
         "width": "640",
         "actions": [
             {

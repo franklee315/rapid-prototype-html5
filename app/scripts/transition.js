@@ -1,11 +1,10 @@
 /**
  * @desc 页面切换动画
- * @module oz/ui/ui.page.transition
+ * @module transition
  * @author lifan
  * @version 1.0
  * @todo Created on 14-1-7.
  *
- * @requires jQuery
  */
 define([
 

@@ -7,7 +7,8 @@
  */
 define([
     "jquery",
-    "transition"
+    "transition",
+    "jcrop"
 ], function ($, Transition) {
 
     'use strict';
@@ -32,21 +33,23 @@ define([
 
                     var $imgDiv = $("<div></div>");
                     $imgDiv.attr("id", id);
+                    $imgDiv.addClass("page");
                     body.append($imgDiv);
-
-                    if (level) {
-                        $imgDiv.show();
-                        console.debug(id + "show");
-                    } else {
-                        $imgDiv.hide();
-                        console.debug(id + "hide");
-                    }
 
                     var $img = $("<img>");
                     $img.attr("src", "images/" + imgName);
                     $img.attr("width", "100%");
                     $img.attr("usemap", "#" + id + "Map");
                     $imgDiv.append($img);
+
+                    if (level) {
+                        $imgDiv.show();
+//                        $img.Jcrop();
+                        console.debug(id + "show");
+                    } else {
+                        $imgDiv.hide();
+                        console.debug(id + "hide");
+                    }
 
                     var map = info["actions"];
                     if (map) {

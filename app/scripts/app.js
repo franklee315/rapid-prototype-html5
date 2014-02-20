@@ -6,10 +6,11 @@
  * @todo Created on 14-2-17.
  */
 define([
-    "jquery",
     "transition",
-    "jcrop"
-], function ($, Transition) {
+    "cut",
+    "jcrop_cut",
+    "jquery"
+], function (Transition, Cut, JcropCut, $) {
 
     'use strict';
 
@@ -38,11 +39,12 @@ define([
 
                     if (first) {
                         $imgDiv.show();
-//                        $img.Jcrop();
                     } else {
                         $imgDiv.hide();
                     }
 
+                    Cut.init($img);
+//                    JcropCut.init($img);
                     var map = info["actions"];
                     if (map) {
                         var $map = $("<map></map>");
